@@ -1,0 +1,43 @@
+:root {
+  --color-primary: darkcyan;
+  --color-secondary: salmon;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.columns {
+  display: flex;
+  max-width: 90rem;
+  margin-inline: auto;
+  position: relative;
+  gap: 3rem;
+  min-height: 25rem;
+  width: 100%;
+}
+
+.columns::after {
+  content: "";
+  inset: 0;
+  width: 50%;
+  border-left: 2px solid var(--color-primary);
+  left: 50%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.column {
+  flex: 1;
+}

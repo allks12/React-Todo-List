@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.addTaskInputField {
+    border: 2px solid var(--color-primary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.addTaskInputField:focus-visible {
+    border: 2px solid var(--color-secondary);
+    outline: none;
+}
+
+.addBtn {
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.addBtn:hover {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}

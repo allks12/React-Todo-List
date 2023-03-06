@@ -1,0 +1,22 @@
+.todoItem {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.readyTask {
+    accent-color: var(--color-primary);
+}
+
+.taskTitle {
+    flex-grow: 1;
+}
+
+.deleteBtn {
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font: inherit;
+    border-radius: 0.6rem;
+}
